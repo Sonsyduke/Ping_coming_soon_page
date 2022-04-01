@@ -4,6 +4,7 @@
 	--color-light-red: hsl(354, 100%, 66%);
 	--color-gray: hsl(0, 0%, 59%);
 	--color-dark-blue: hsl(209, 33%, 12%);
+	--color-white: #fff
 }
 
 /* =================== CSS RESET  ===================*/
@@ -90,5 +91,51 @@ body {
 }
 
 .input {
+	border: 1px solid var(--color-pale-blue);
+	border-radius: 20px;
+	width: 40%;
+	padding: 10px 20px;
+}
 
+.input::placeholder {
+	color: var(--color-pale-blue);
+}
+
+.input:focus {
+	border: 1px solid var(--color-dark-blue);
+}
+
+.main-btn {
+	border: none;
+	border-radius: 20px;
+	background-color: var(--color-primary);
+	padding: 10px 40px;
+	color: var(--color-white);
+}
+
+.main-btn:hover {
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid var(--color-primary);
+	color: var(--color-primary);
+}
+
+small {
+	display: block;
+}
+
+.socials {
+	margin-top: 50px;
+}
+
+.social-logo {
+	margin: 0 10px;
+	width: 15px;
+	height: 15px;
+}
+
+.copyright {
+	margin-top: 20px;
+	font-size: 14px;
+	color: var(--color-gray);
 }

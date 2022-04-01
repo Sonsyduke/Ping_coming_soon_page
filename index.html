@@ -18,17 +18,18 @@
     <h1 class="main-heading">We are launching <span>soon!</span></h1>
     <p class="desc">Subscribe and get notified</p>
 
-    <form action="POST" class="subcribe">
-      <input class="input" type="email" placeholder="Your email address">
+    <form action="POST" class="subcribe" id="form">
+      <input class="input" type="email" id="email" placeholder="Your email address" required>
       <button class="main-btn">Notify Me</button>
+      <small>Error Message</small>
     </form>
 
     <img class="illustration" src="./images/illustration-dashboard.png" alt="Illustration Dashboard">
     
     <div class="socials">
-      <a href="#"><img src="./images/facebook.svg" alt="Facebook logo"></a>
-      <a href="#"><img src="./images/twitter.svg" alt="Twitter logo"></a>
-      <a href="#"><img src="./images/instagram.svg" alt="Instragram logo"></a>
+      <a href="#"><img src="./images/facebook.svg" class="social-logo" alt="Facebook logo"></a>
+      <a href="#"><img src="./images/twitter.svg"  class="social-logo" alt="Twitter logo"></a>
+      <a href="#"><img src="./images/instagram.svg"  class="social-logo" alt="Instragram logo"></a>
     </div>
 
     <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
@@ -45,5 +46,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+
+  <script src="./js/app.js"></script>
 </body>
 </html>
