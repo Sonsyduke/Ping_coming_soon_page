@@ -120,16 +120,6 @@ body {
 	color: var(--color-primary);
 }
 
-small {
-	display: block;
-}
-
-.error small {
-	color: red;
-	margin: 10px 350px 0 0;
-	font-size: 16px;
-}
-
 .socials {
 	margin-top: 50px;
 }
@@ -144,4 +134,28 @@ small {
 	margin-top: 20px;
 	font-size: 14px;
 	color: var(--color-gray);
+}
+
+/* ================== END OF DESKTOP STYLING ================== */
+
+@media (max-width: 375px) {
+	.form-control {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.input {
+		width: 82%;
+		margin-bottom: 10px;
+	}
+
+	.main-btn {
+		width: 100%;
+	}
+
+	.illustration {
+		width: 100%;
+		height: 100%;
+	}
 }
