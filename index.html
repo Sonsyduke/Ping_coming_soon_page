@@ -19,10 +19,11 @@
     <p class="desc">Subscribe and get notified</p>
 
     <form action="POST" class="subcribe" id="form">
-      <div class="form-control">
+      <div class="form-control error">
         <input class="input" type="email" id="email" placeholder="Your email address" required>
-        <button class="main-btn">Notify Me</button>
+        <small id="error-message">Error Message</small>
       </div>
+      <button id="main-btn">Notify Me</button>
     </form>
 
     <img class="illustration" src="./images/illustration-dashboard.png" alt="Illustration Dashboard">

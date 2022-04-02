@@ -83,17 +83,19 @@ body {
 
 .subcribe {
 	margin: 30px 0 50px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
 
-.illustration {
-	width: 70%;
-	height: 70%;
+.form-control {
+	align-self: center;
 }
 
 .input {
 	border: 1px solid var(--color-pale-blue);
 	border-radius: 20px;
-	width: 40%;
+	width: 90%;
 	padding: 10px 20px;
 }
 
@@ -105,19 +107,41 @@ body {
 	border: 1px solid var(--color-dark-blue);
 }
 
-.main-btn {
+button#main-btn {
 	border: none;
 	border-radius: 20px;
 	background-color: var(--color-primary);
 	padding: 10px 40px;
 	color: var(--color-white);
+	grid-column: 2 / 3;
+	height: 37px;
 }
 
-.main-btn:hover {
+#main-btn:hover {
 	cursor: pointer;
 	background-color: transparent;
 	border: 1px solid var(--color-primary);
 	color: var(--color-primary);
+}
+
+#error-message {
+	grid-row: 2 / 3;
+	justify-self: self-start;
+	visibility: hidden;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control.error #error-message {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.illustration {
+	width: 70%;
+	height: 70%;
 }
 
 .socials {
