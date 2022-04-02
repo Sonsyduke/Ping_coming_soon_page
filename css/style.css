@@ -82,10 +82,12 @@ body {
 }
 
 .subcribe {
-	margin: 30px 0 50px;
+	width: 80%;
+	margin: 30px auto 50px;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-template-rows: 1fr 1fr;
+	gap: 1rem;
 }
 
 .form-control {
@@ -174,19 +176,22 @@ button#main-btn {
 /* ================== END OF DESKTOP STYLING ================== */
 
 @media (max-width: 375px) {
+	.subcribe {
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
 	.form-control {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-
-	.input {
-		width: 82%;
+		width: 90%;
 		margin-bottom: 10px;
+		grid-column: 1 / 3;
 	}
 
-	.main-btn {
+	button#main-btn {
 		width: 100%;
+		grid-column: 1 / 3;
+		grid-row: 2 / 3;
 	}
 
 	.illustration {
