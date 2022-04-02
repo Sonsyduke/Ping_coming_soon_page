@@ -90,6 +90,7 @@ body {
 
 .form-control {
 	align-self: center;
+	text-align: left;
 }
 
 .input {
@@ -97,6 +98,7 @@ body {
 	border-radius: 20px;
 	width: 90%;
 	padding: 10px 20px;
+	margin-bottom: 5px;
 }
 
 .input::placeholder {
@@ -127,6 +129,15 @@ button#main-btn {
 #error-message {
 	grid-row: 2 / 3;
 	justify-self: self-start;
+	visibility: hidden;
+	font-size: 0.8rem;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.success #error-message {
 	visibility: hidden;
 }
 
